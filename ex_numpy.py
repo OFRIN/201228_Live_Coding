@@ -10,8 +10,8 @@ import matplotlib.pyplot as plt
 '''
 vector = np.arange(100)
 
-np.random.seed(0)
-np.random.shuffle(vector)
+# np.random.seed(0)
+# np.random.shuffle(vector)
 
 '''
 [34 70 45 12 42 31 27 14 17 73 21 13 10 57  4 35  1 79 81 72 65  9 11 33
@@ -20,12 +20,17 @@ np.random.shuffle(vector)
  47 95 90 29 41 85 52 53]
 [43 76 60 84 69 40 24 98 88 94 96 30 15 51 67 89 78 37 58 87]
 '''
-train_x = vector[:80]
-test_x = vector[80:]
+# train_x = vector[:80]
+# test_x = vector[80:]
 
-plt.plot(train_x)
-plt.plot(test_x)
-plt.show()
+# plt.plot(train_x)
+# plt.plot(test_x)
+# plt.show()
 
-print(train_x)
-print(test_x)
+# print(train_x)
+# print(test_x)
+
+vector = np.arange(100).tolist()
+print(vector[0], vector[1], vector[4], vector[5])
+
+print(vector[[0, 1, 4, 5]])
