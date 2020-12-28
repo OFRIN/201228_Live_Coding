@@ -27,3 +27,4 @@ for class_index, class_name in enumerate(dataset.target_names):
 
 df['class_names'] = df['label'].map(class_dic)
 df.to_csv('./data/dataset.csv')
+
